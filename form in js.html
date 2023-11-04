@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+    <head>
+<script>
+    function save(){
+        var x= parseInt(q1.value);
+        var y= parseInt(q2.value);
+        var z= parseInt(q3.value); 
+    if(p1.checkead){
+     var book1=x*3;
+    }
+    else{
+book1=0;
+    }
+    if(p2.checkead){
+        var book2=y*2;
+    }
+    else{
+        book2=0;
+    }
+    if(p3.checkead){
+        var book3=z*4;
+    }
+    else{
+        book3=o;
+    }
+    var save=book1+book2+book3;
+  //  document.write("save ="+save);
+  s1.innerHTML="save="+save;
+    }   
+   
+</script>
+
+    </head>
+    <body>
+        <form>
+            <label>
+                <input type="checkbox" id="p1">
+                c++
+                <input type="number" placeholder="enter a numper" id="q1">
+                <br>
+                <input type="checkbox" id="p2">
+                java
+                <input type="number" placeholder="enter a numper" id="q2">
+<br>
+<input type="checkbox" id="p3">
+php
+<input type="number" placeholder="enter a numper" id="q3">
+            </label>
+            <br>
+            <br>
+            <input type="button" value="save" id="p4" onclick="save()">
+        </form>
+        <div id="s1">
+
+        </div>
+    </body>
+</html>
